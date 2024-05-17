@@ -39,6 +39,11 @@ header{
     transition: all .50s ease;
 }
 
+header img{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
 .logo{
     font-size: 36px;
     color: var(--text-color);
@@ -100,8 +105,10 @@ section{
     height: 100vh;
     width: 100%;
     background: url(../img/background.png);
-    background-position: top right;
-    background-size: cover;
+    background-position: center center;
+    background-position-x: 70%; 
+    background-repeat: no-repeat;
+    background-size: auto;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -457,6 +464,13 @@ form .send-btn:hover{
     section{
         padding: 90px 8% 80px;
     }
+    .hero{
+        background-color: transparent;background: url(../img/background.png);
+        background-position: center center;
+        background-position-x: 80%; 
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
     .footer{
         padding: 18px 8%;
     }
@@ -475,12 +489,16 @@ form .send-btn:hover{
     section{
         padding: 90px 5% 80px;
     }
+    .hero{
+        background-color: transparent;background: url(../img/background.png);
+        background-position-x: 90%;
+        background-position-y: 50%;
+        height: 90vh;
+        background-repeat: no-repeat;
+        background-size: 350px;
+    }
     .footer{
         padding: 18px 5%;
-    }
-    .hero{
-        height: 90vh;
-        background-position: center;
     }
 }
 
@@ -504,6 +522,10 @@ form .send-btn:hover{
         grid-template-columns: 1fr;
         gap: 2rem;
         text-align: center;
+    }
+    .hero{
+        background-color: transparent;
+        background: none;
     }
     .about-img img{
         text-align: center;
@@ -530,6 +552,11 @@ form .send-btn:hover{
     }
     #menu-icon{
         display: block;
+    }
+
+    .hero{
+        background-color: transparent;
+        background: none;
     }
     .navlist{
         position: absolute;
@@ -559,6 +586,10 @@ form .send-btn:hover{
     .main-content p{
         width: 100%;
     }
+    .hero{
+        background-color: transparent;
+        background: none;
+    }
 }
 
 @media (max-width: 470px){
@@ -566,7 +597,10 @@ form .send-btn:hover{
         --h1-font: 3rem;
         --h2-font: 2rem;
     }
-
+    .hero{
+        background-color: transparent;
+        background: none;
+    }
     .about-img img{
         text-align: center;
         width: 100%;
